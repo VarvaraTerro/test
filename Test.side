@@ -1,0 +1,96 @@
+{
+  "id": "833e7a5e-fe12-4c96-9b9c-b774b4f9bd20",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://demoqa.com",
+  "tests": [{
+    "id": "3b8f849e-159f-41c7-bd88-936d08fd3d68",
+    "name": "Test",
+    "commands": [{
+      "id": "2f291455-c48a-45ff-8a2a-ad27bbf4e0bb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b452ce21-bdd5-4a8e-9497-e5e5c81ec0d3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"app\"]/div/div/div[2]/div/div[1]",
+      "targets": [
+        ["css=.card:nth-child(1) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "39620838-5c51-4e9d-93e1-f9f050c639e5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='item-1']/span",
+      "targets": [
+        ["css=.show #item-1 > .text", "css:finder"],
+        ["xpath=//li[@id='item-1']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Check Box')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "866ad5e9-bca2-42d8-ba29-0ce99e9fd7bc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"tree-node\"]/ol/li/span/label/span[1]",
+      "targets": [
+        ["css=.rct-icon-uncheck", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c660779-6b75-4486-84b0-859019225507",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='item-2']",
+      "targets": [
+        ["id=item-2", "id"],
+        ["css=.show #item-2", "css:finder"],
+        ["xpath=//li[@id='item-2']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/div/div/div/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Radio Button')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc294a7-6114-4fb2-8e44-27a27ee38a7b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'Impressive')]",
+      "targets": [
+        ["css=.custom-control:nth-child(3) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/div[2]/div[2]/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Impressive')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "251d0e8d-1698-4a91-a127-1cf5d644c270",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'Yes')]",
+      "targets": [
+        ["css=.custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/div[2]/div[2]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "447a05d9-095a-4cee-9ffe-ea636c8ff04f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3b8f849e-159f-41c7-bd88-936d08fd3d68"]
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}
